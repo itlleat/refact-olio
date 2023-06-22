@@ -23,17 +23,18 @@ export default function Project({ isDarkMode }) {
             </a>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div" className={textClassName}>
-                Lizard
+                FUCK
               </Typography>
               <Typography variant="body2" className={textClassName}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+               AH SHIT AH FUCK AH SHIT AH FUCK AH SHIT AH FUCK AH SHIT AH FUCK 
+               AH SHIT AH FUCK AH SHIT AH FUCK AH SHIT AH FUCK 
+               AH SHIT AH FUCK AH SHIT AH FUCK AH SHIT AH FUCK 
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              Share
+              Shit
             </Button>
           </CardActions>
         </Card>
