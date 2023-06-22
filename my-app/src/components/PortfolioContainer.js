@@ -1,46 +1,18 @@
+
+
+
 import React, { useState } from 'react';
 import Collapse from '@mui/material/Collapse';
 import Footer from './Footer';
 import Project from './Project';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Menu from './Menu';
 import Technologies from './Technologies';
+import DarkModeSwitch from './DarkModeSwitch';
+import "./PortfolioContainer.css"
+
+
 
 export default function PortfolioContainer() {
-  const defaultProperties = {
-    dark: {
-      circle: {
-        r: 9,
-      },
-      mask: {
-        cx: '50%',
-        cy: '23%',
-      },
-      svg: {
-        transform: 'rotate(40deg)',
-      },
-      lines: {
-        opacity: 0,
-      },
-    },
-    light: {
-      circle: {
-        r: 5,
-      },
-      mask: {
-        cx: '100%',
-        cy: '0%',
-      },
-      svg: {
-        transform: 'rotate(90deg)',
-      },
-      lines: {
-        opacity: 1,
-      },
-    },
-    springConfig: { mass: 4, tension: 250, friction: 35 },
-  };
-
   const [isDarkMode, setDarkMode] = useState(false);
   const [collapsed, setCollapsed] = useState(!isDarkMode);
 
@@ -54,14 +26,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       <div className={containerClassName}>
-        <DarkModeSwitch
-          className='switch'
-          style={{ marginTop: '1rem', marginRight: '1rem' }}
-          checked={isDarkMode}
-          onChange={toggleDarkMode}
-          size={50}
-          defaultProperties={defaultProperties}
-        />
+        <DarkModeSwitch isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
         <Menu className='menu' />
         <Collapse in={collapsed} collapsedSize={40}>
@@ -71,8 +36,9 @@ export default function PortfolioContainer() {
             <div className="background-color" />
           </div>
         </Collapse>
-        <Technologies />
-        <Project />
+        <Project isDarkMode={isDarkMode} />
+        {/* <Technologies isDarkMode={isDarkMode} /> */}
+        
         <Footer />
       </div>
     </div>

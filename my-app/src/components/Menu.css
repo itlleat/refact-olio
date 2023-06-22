@@ -1,0 +1,8 @@
+.dark-mode .switch {
+    background-color: black;
+    background: linear-gradient(to right, rgba(130, 154, 177, 0) 0%, rgba(51, 78, 104, 0.5) 100%);
+    outline: 3px solid #36B37E;
+    box-shadow: 0 0 10px #ABF5D1;
+    transition: outline 1.2s, box-shadow 1.3s;
+    border-radius: 50%;
+  }
