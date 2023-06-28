@@ -4,15 +4,19 @@
   "private": false,
   "homepage": "https://itlleat.github.io/refact-olio/",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/styled-engine": "^5.13.2",
+    "@react-email/link": "0.0.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs": "^4.0.2",
     "gh-pages": "^5.0.0",
     "hamburger-react": "^2.5.0",
     "nodemon": "^2.0.22",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^18.2.0",
     "react-native": "^0.71.10",
@@ -50,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-svg-loader": "^3.0.3"
   }
 }

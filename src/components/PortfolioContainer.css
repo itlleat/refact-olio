@@ -3,9 +3,11 @@
  .light-mode {
     transition: background 1.25s;
     background: #D9E2EC;
+    height: max-content;
   }
   
   .dark-mode {
     transition: background 1.25s;
     background: #222222;
+    height: max-content;
   }

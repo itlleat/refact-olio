@@ -1,0 +1,38 @@
+/* .light-mode .email-logo {
+    position: relative;
+    padding-top: 2rem;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('./images/gmail.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom 10%;
+    opacity:100%;
+  }
+
+  .dark-mode .email-logo {
+    position: absolute;
+    padding-top: 2rem;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image:'./images/gmail.svg';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom 10%;
+    opacity:75%;
+  } */
+
+  .email-logo {
+    background-image: url('./images/gmail.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    /* Additional styling properties */
+    width: 30px;
+    height: 30px;
+    border: none;
+    /* Add any other styles as needed */
+  }
+

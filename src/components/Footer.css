@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  

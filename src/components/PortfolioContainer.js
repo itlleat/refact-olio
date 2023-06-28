@@ -3,12 +3,19 @@
 
 import React, { useState } from 'react';
 import Collapse from '@mui/material/Collapse';
-import Footer from './Footer';
+
 import Project from './Project';
 import Menu from './Menu';
-import Technologies from './Technologies';
+import Footer from './Footer'
 import DarkModeSwitch from './DarkModeSwitch';
 import "./PortfolioContainer.css"
+import About from './About';
+import AboutTwo from './AboutTwo'
+import AboutThree from './AboutThree'
+import AboutFour from './AboutFour'
+import Choose from './Choose'
+import Email from './Email'
+
 
 
 
@@ -36,10 +43,15 @@ export default function PortfolioContainer() {
             <div className="background-color" />
           </div>
         </Collapse>
+        <Choose isDarkMode={isDarkMode} />
+        <About isDarkMode={isDarkMode} />
+        <AboutTwo isDarkMode={isDarkMode} />
+        <AboutThree isDarkMode={isDarkMode} />
+        <AboutFour isDarkMode={isDarkMode} />
         <Project isDarkMode={isDarkMode} />
         {/* <Technologies isDarkMode={isDarkMode} /> */}
-        
-        <Footer />
+        <Email isDarkMode={isDarkMode} />
+        <Footer isDarkMode={isDarkMode} />
       </div>
     </div>
   );
