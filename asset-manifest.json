@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50c7175f.css",
+    "main.js": "/static/js/main.3af6a3c0.js",
+    "static/media/koda.jpg": "/static/media/koda.69ec119ba5cf855f97d8.jpg",
+    "static/media/scottrmnp.jpg": "/static/media/scottrmnp.3489b7bf6e31ab12476a.jpg",
+    "static/media/scottrob.jpg": "/static/media/scottrob.f6333c79cdff2d47c399.jpg",
+    "static/media/scottmetal.jpg": "/static/media/scottmetal.99fdd1e4a248e039a0a3.jpg",
+    "static/media/roddy.jpg": "/static/media/roddy.27ff19884d4de536044a.jpg",
+    "static/media/1night_count.jpeg": "/static/media/1night_count.c5775ddca0fe388334e0.jpeg",
+    "static/media/The_War_of_the_Worlds_by_Henrique_Alvim_Corrêa,_original_graphic_15.jpeg": "/static/media/The_War_of_the_Worlds_by_Henrique_Alvim_Corrêa,_original_graphic_15.ca876fdb0df21e1e2cf1.jpeg",
+    "static/media/3dark_frankenstein.jpeg": "/static/media/3dark_frankenstein.4a10069275329f337d32.jpeg",
+    "static/media/server-protection.svg": "/static/media/server-protection.75fdbc4ad0d8a8b09030.svg",
+    "static/media/hgwells.jpg": "/static/media/hgwells.32b40d1290b90e424e63.jpg",
+    "static/media/Alexander_Dumas_père_par_Nadar_-_Google_Art_Project.jpeg": "/static/media/Alexander_Dumas_père_par_Nadar_-_Google_Art_Project.47e951a12baa0710a55e.jpeg",
+    "static/media/2shoggoth.jpeg": "/static/media/2shoggoth.3f06a52aba1319d4ec1a.jpeg",
+    "static/media/mary.jpg": "/static/media/mary.f290d7cc7a9f369e545a.jpg",
+    "static/media/business-growth-happy-publicdomainvectors.org.svg": "/static/media/business-growth-happy-publicdomainvectors.org.5fc30e2f6f935eae35a8.svg",
+    "static/media/lovecraft.jpg": "/static/media/lovecraft.b3f4432b7fa6a18ff7e6.jpg",
+    "static/media/developer-at-work.svg": "/static/media/developer-at-work.81efa0c5adee1e78ec9f.svg",
+    "static/media/girl-taking-selfie (1).svg": "/static/media/girl-taking-selfie (1).51bd7ce9290677476d98.svg",
+    "index.html": "/index.html",
+    "main.50c7175f.css.map": "/static/css/main.50c7175f.css.map",
+    "main.3af6a3c0.js.map": "/static/js/main.3af6a3c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50c7175f.css",
+    "static/js/main.3af6a3c0.js"
+  ]
+}
