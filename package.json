@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://itlleat.github.io/refact-olio/",
+  "homepage": "https://itlleat.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/styled": "^11.11.0",
