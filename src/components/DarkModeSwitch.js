@@ -38,13 +38,18 @@ export default function DarkModeSwitch({ isDarkMode, toggleDarkMode }) {
   };
 
   return (
+    <>
+    <div className='switch-container'>
     <ToggleDarkModeSwitch
       className='switch'
-      style={{ marginTop: '1rem', marginRight: '1rem' }}
+      style={{ marginTop: '.5rem', marginRight: '.5rem' }}
       checked={isDarkMode}
       onChange={toggleDarkMode}
-      size={50}
+      size={30}
       defaultProperties={defaultProperties}
     />
+{/* <p className='spacer'></p> */}
+</div>
+</>
   );
 }

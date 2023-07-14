@@ -1,16 +1,17 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import './Project.css'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import  './Email.css';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Email({ isDarkMode }) {
-  const containerClassName = `project-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`;
-  const textClassName = `project-text ${isDarkMode ? 'dark-text' : 'light-text'}`; 
+  const containerClassName = `email-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`;
+  const textClassName = `email-text ${isDarkMode ? 'dark-text' : 'light-text'}`; 
+  const iconClassName = `email-icon ${isDarkMode ? 'dark-text' : 'light-text'}`;
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -38,31 +39,32 @@ export default function Email({ isDarkMode }) {
   };
 
   return (
-    <div className={containerClassName}>
+
       <Box
         className={containerClassName}
-        sx={{
-          width: 500,
-          maxWidth: '100%',
-        }}
       >
+        <Typography id="contact-title" variant="h3">Contact</Typography>
+        {/* <EmailOutlinedIcon className={iconClassName} /> */}
                 {isSubmitted ? (
-          <Typography variant="h6" align="center">
+          <Typography variant="h2" align="center">
             Submission successful!
           </Typography>
         ) : (
         <form ref={form} onSubmit={sendEmail}>
           <TextField type='text' className={textClassName} fullWidth label="Name" id="name" />
+          <div className='spacer' />
           <TextField type='email' className={textClassName} fullWidth label="Email" id="email" />
+          <div className='spacer' />
           <TextField type='text' className={textClassName} fullWidth label="Message" id="message" />
 
-        
-<EmailOutlinedIcon className='email-logo' />
-<input type="submit" value="submit" />
+          <Button className='submit-button' type="submit" value="submit" variant="contained" endIcon={<SendIcon />}>
+  Send
+</Button>
+
         
         </form>
            )}
       </Box>
-    </div>
+
   );
 };

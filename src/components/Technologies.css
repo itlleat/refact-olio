@@ -10,10 +10,10 @@
     height: auto;
   }
   
-  @media (orientation: landscape) {
+  /* @media (orientation: landscape) {
     .technologies {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
-  }
+  } */
   
   

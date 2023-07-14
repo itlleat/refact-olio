@@ -1,29 +1,114 @@
-.project-container {
+/* .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem; /* Add gap between cards */
+    gap: .5rem; 
     height: 100vh;
+    margin-top: 3rem;
+  } */
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start; /* Updated property */
+    gap: 0.5rem;
+    margin-top: 3rem;
   }
 
-  .project-card {
-    /* height: 450px; */
-    width: calc(50% - 0.5rem); /* Set width to 50% minus the gap */
-    margin-bottom: 1rem; /* Add margin-bottom for spacing between rows */
-  }
+  /* @media (max-width: 768px) {
+    .project-card {
+      width: 100%;
+    }
+  } */
   
+
+  .project-card {
+
+    width: calc(50% - 0.5rem);
+    margin-bottom: 1rem; 
+    
+  }
+
+
   .light-mode .project-card {
     width: 300px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.5) 0%);
-    transition: .8s;
+    background:
+    repeating-linear-gradient(50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    repeating-linear-gradient(-50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    #f9d7d6;
+  background-blend-mode: multiply;
+  outline: 2px solid #f2757d;
+  box-shadow: 0 0 8px #454077;
+  transition: .8s;
+  margin-left: auto;
+  margin-right: auto;
   }
   .dark-mode .project-card {
     width: 300px;
-    background: linear-gradient(to top, rgba(130, 154, 177, 0) 0%, rgba(51, 78, 104, 0.5) 100%);
-    outline: 2px solid  #ABF5D1;
-    box-shadow: 0 0 8px #36B37E;
-    transition: outline .8s, box-shadow .6s;
+    background:
+    repeating-linear-gradient(50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    repeating-linear-gradient(-50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    #454077;
+  background-blend-mode: multiply;
+  outline: 2px solid #746cc0;
+  box-shadow: 0 0 8px #efedff;
+  transition: .8s;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .light-mode .card-media {
@@ -150,21 +235,29 @@
     opacity:75%;
   }
 
-  .project-text {
 
   /* *********THIS IS WHERE THE HEIGHT OF THE CARDS IS MATCHED**** */
+
+  .project-text {
+
     height: 75px;
   }
   
   .light-mode .project-text {
-    color: black;
+    color: #fef6f6;
+    /* background: #fef6f6; */
     transition: color .8s;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 3px;
   }
   
   .dark-mode .project-text {
-  
-    color: white;
+    color: #f2757d;
     transition: color .8s;
+    /* background: #1a2a3d; */
+    padding: 6px;
+    border-radius: 3px;
   }
 
   .logo {
@@ -172,61 +265,4 @@
     height: auto;
   }
 
-  /* .light-mode .repo-link {
-
-  } */
-
-  /* .dark-mode .repo-link {
-    transition: radial-gradient .8s, opacity .6s;
-    background: radial-gradient(#ABF5D1 30%, #36B37E 60%, rgba(130, 154, 177, 0) 90% );
-  } */
-
-  /* .dark-mode .repo-link {
-    animation: fadeInBackground 0.8s ease-in-out forwards;
-    background: radial-gradient(circle closest-side at center, rgba(171, 245, 209, 1) 20%, rgba(54, 179, 126, 0.8) 60%, rgba(130, 154, 177, 0) 100%);
-  }
-  */
-  /* @keyframes fadeInBackground {
-    0% {
-      background-size: 100% 100%;
-      opacity: 0;
-    }
-    100% {
-      background-size: 100% 100%;
-      opacity: 1;
-    }
-  } 
-
-  .dark-mode .repo-link {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .dark-mode .repo-link::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle closest-side at center, rgba(171, 245, 209, 1) 20%, rgba(54, 179, 126, 0.8) 60%, rgba(130, 154, 177, 0) 100%);
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-  }
-  
-  .dark-mode .repo-link:hover::before {
-    opacity: 1;
-  } */
-
-
-  
  
-  
-  
-  
-  
-  
-  
-  
-  

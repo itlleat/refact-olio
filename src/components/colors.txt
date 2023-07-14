@@ -1,0 +1,59 @@
+granite pallet
+
+darkest pink
+
+#f2757d
+
+darker pink
+
+#f49fa1
+
+dark pink
+
+#f7cac9
+
+light pink
+
+#ffdcdb
+
+lighter pink
+
+#f9d7d6
+#fbe6e5
+#fde5e4
+
+lightest pink
+
+#fdf1f1
+#fef5f5
+#fef6f6
+
+white
+
+light blue
+
+#b4c8ea
+
+dark blue 
+
+#91a8d0
+
+darker blue
+
+#6283a9
+
+darkest blue
+
+#395d85
+
+dark-mode background blue
+
+#011933
+
+
+
+MISC 
+
+Purple 
+
+#746cc0

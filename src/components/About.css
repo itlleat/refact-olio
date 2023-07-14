@@ -1,8 +1,160 @@
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem; /* Add gap between cards */
+.light-mode .about-card {
+  background: #91a8d0;
 }
-  
+
+.about-card {
+  flex: 0 0 calc(50% - 0.5rem);
+  /* Set width to 50% minus the gap */
+  margin-bottom: 1rem;
+  margin-left: 50%;
+  background: #3e3858;
+
+}
+
+/* @media (max-width: 960px) {
+  .about-card {
+    flex: 0 0 100%;
+  }
+} */
+
+.light-mode .about-container {
+  background:
+    repeating-linear-gradient(50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    repeating-linear-gradient(-50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    #f9d7d6;
+  background-blend-mode: multiply;
+  outline: 2px solid #f2757d;
+  box-shadow: 0 0 8px #454077;
+  transition: .8s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark-mode .about-container {
+  /* width: 300px; */
+  background:
+    repeating-linear-gradient(50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    repeating-linear-gradient(-50deg,
+      #f9d7d6,
+      #f9d7d6 2em,
+      #fbe6e5 2em,
+      #fbe6e5 4em,
+      #fdf1f1 4em,
+      #fdf1f1 5em,
+      #fef5f5 5em,
+      #fef5f5 6em,
+      #fef6f6 6em,
+      #b4c8ea 6em,
+      #b4c8ea 7em,
+      #91a8d0 7em,
+      #91a8d0 8em),
+    #454077;
+  background-blend-mode: multiply;
+  outline: 2px solid #746cc0;
+  box-shadow: 0 0 8px #efedff;
+  transition: .8s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.light-mode .MuiCardHeader-title {
+  transition: color .8s;
+  padding: 3px;
+}
+
+.dark-mode .MuiCardHeader-title {
+  color: #f2757d;
+  transition: color .8s;
+  padding: 3px;
+}
+
+.light-mode .MuiCardHeader-subheader {
+  visibility: hidden;
+}
+
+.dark-mode .MuiCardHeader-subheader {
+  visibility: hidden;
+}
+
+.light-mode .bgimg {
+  position: relative;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+  transition: .8s;
+}
+
+.dark-mode .bgimg {
+  position: relative;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+  transition: .8s;
+  opacity: 75%;
+
+}
+
+.light-mode .about-text {
+  color: #142130;
+  background: #fef6f6;
+  transition: color .8s;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.dark-mode .about-text {
+  color: #f2757d;
+  transition: color .8s;
+  background: #1a2a3d;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.light-mode .about-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-mode .about-container {
+  position: relative;
+  overflow: hidden;
+}

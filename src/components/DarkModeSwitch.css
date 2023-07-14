@@ -1,16 +1,63 @@
-.switch {
-    position: fixed;
-    right: 0; 
+/* .switch {
+    position: absolute;
+
     
+}
+
+.light-mode .switch {
+
 }
 
 .dark-mode .switch {
     background-color: black;
     background: linear-gradient(to right, rgba(130, 154, 177, 0) 0%, rgba(51, 78, 104, 0.5) 100%);
-    outline: 3px solid #36B37E;
-    box-shadow: 0 0 10px #ABF5D1;
+    outline: 2px solid #746cc0;
+    box-shadow: 0 0 8px #efedff;
     transition: outline 1.2s, box-shadow 1.3s;
     border-radius: 50%;
-  }
+    }
+
+    .spacer {
+        margin-bottom: 1rem;
+      } */
+
+      .light-mode .switch-container {
+        max-height: 100px;
+        padding-bottom: 3rem;
+      }
+
+      .dark-mode .switch-container {
+        max-height: 100px;
+        padding-bottom: 3rem;
+      }
+
+      .switch {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem; /* Adjust the top positioning as needed */
+      }
+      
+      .light-mode .switch {
+        /* Styles for light mode switch */
+      }
+      
+      .dark-mode .switch {
+        background-color: black;
+        background: linear-gradient(to right, rgba(130, 154, 177, 0) 0%, rgba(51, 78, 104, 0.5) 100%);
+        outline: 2px solid #746cc0;
+        box-shadow: 0 0 8px #efedff;
+        transition: outline 1.2s, box-shadow 1.3s;
+        border-radius: 50%;
+      }
+      
+      .spacer {
+        margin-bottom: 1rem;
+      }
+      
+      
+      
+
+
   
   

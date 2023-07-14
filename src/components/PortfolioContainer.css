@@ -1,13 +1,19 @@
 
- 
- .light-mode {
-    transition: background 1.25s;
-    background: #D9E2EC;
-    height: max-content;
-  }
   
-  .dark-mode {
-    transition: background 1.25s;
-    background: #222222;
-    height: max-content;
-  }
+.light-mode {
+  background: #fef6f6;
+  
+}
+
+.dark-mode {
+
+  background: #142130;
+}
+
+.spacer {
+  margin-bottom: 1rem;
+}
+
+
+
+  
